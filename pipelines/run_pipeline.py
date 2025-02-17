@@ -2,7 +2,7 @@
 import logging
 logging.basicConfig(level=logging.INFO)
 
-from data_loader import load_data, split_data
+from data_loader import load_data, split_data 
 from preprocessing import preprocess_data
 from model_training import train_model, evaluate_model
 from utils import save_model,evaluate_model
@@ -46,7 +46,7 @@ def run_pipeline(file_path):
     save_model(model, 'model.pkl')
     logging.info("Pipeline completed successfully.")
 
-# if __name__ == "__main__":
-#     # Provide the path to your dataset
-#     file_path = 'C:\\Users\\DELL\\Downloads\\ModularProjects\\AmesHousing\\data\\AmesHousing.csv'
-#     run_pipeline(file_path)
+if __name__ == "__main__":
+    # Provide the path to your dataset
+    file_path = 'C:\\Users\\DELL\\Downloads\\ModularProjects\\AmesHousing\\data\\AmesHousing.csv'
+    run_pipeline(file_path)
